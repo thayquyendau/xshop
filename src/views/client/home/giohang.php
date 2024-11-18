@@ -1,5 +1,5 @@
 <div class="col xl-12">
-    <!-- Đây là giỏ hàng -->
+    <!-- Đây là giỏ hàng Quyền mới thêm đoạn này nữa-->
     <div class="detail-bgr">
         <div class="detail-main">
             <div class="title">Giỏ hàng</div>
