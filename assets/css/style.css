@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+html {
+    font-size: 62.5%;
+}
+/* //Sanpham */
+.icon{
+    width: 20px;
+    height: 20px;   
+    display: inline-block;    
+}
+.title {
+    text-transform: uppercase;
+    font-size: 24px;
+    padding: 10px 0;
+    font-weight: bolder;
+
+}
+.title-product{
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: bolder;
+}
+.title-product a{
+    text-decoration: none;
+}
+.product-list {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.price{
+    font-weight: bolder;
+    font-size: 18px;
+}
+.rating{
+    font-size: 16px;
+}
+.top-star{
+    display:flex;
+    align-items: center;
+}
+.count{
+    font-size: 14px;
+    margin-left: 5px;
+}
+.stars {
+    color: #f5b301; /* Màu vàng */
+    font-size: 2rem;
+   
+}
+a{
+    text-decoration: none;
+}
+del{
+    color: #00000061;
+    text-decoration: line-through;
+    font-size: 16px;
+}
+/* Chi tiet san pham */
+.detail-bgr{
+    background: #EFF3F6;
+}
+.detail{
+    background-color: #D00B0F;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+.title-detail{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.detailProduct{
+    color: #ffffff;
+    display: flex;      
+    justify-content:space-between;
+}
+.detail {
+
+}
+.detail-main{
+    margin: 20px 20px;
+}
+.detail_space{
+    margin-bottom: 20px;
+}
+.title-course{
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.detailProduct {}
+
+.detailProduct-left {
+    width: 700px;
+ /* margin-right: 100px; */
+}
+
+.detail-content{
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.detailProduct-right {}
+.detalProduct-right-course{
+    padding-top: 20px;
+}
+.detail-course {
+    border: 1px solid;
+    
+    border-radius: 5px;
+}
+
+.detail-course-main {
+    padding-bottom: 20px;
+}
+
+.title {}
+
+.detail-course-main-body {
+    display: flex;
+    justify-content: space-between;
+}
+.detail-boder{
+    padding: 10px 20px;
+}
+.detail-boder-bottom{
+    border-bottom: 1px solid;
+}
+.detail-course-main-body-left {
+    /* padding-right: 40px; */
+}
+.detail-course-left{
+    padding-right: 120px;
+}
+.detail-course-main-body-right {}
+
+.detail-course-content{
+    border: 1px solid;
+}
+.detail-name{
+    font-size: large;
+    font-size: 20px;
+    color: #04528D ;
+}
+.detail-comment-top{
+    padding: 10px;
+    border-top: 1px solid;
+}
+
+
+/* Danh muc */  
+.header-container {
+    display: flex;
+    justify-content: space-between;
+}
+.button-group {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.category-button {
+    display: flex;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.category-main{
+    display: flex;
+    padding-top: 10px;
+}
+.category-top-form{
+    padding: 10px;
+}
+.category-title{
+    font-size: 20px;
+}
+    .category-top-form {}
+    #toggleCheckbox, #radio {
+        display: none;
+    }
+    /* Nội dung ẩn/hiển thị dựa trên trạng thái của checkbox */
+    #toggleCheckbox:checked ~ .category-content-wrapper {
+        display: none;
+    }
+    /* Nội dung ẩn/hiển thị dựa trên trạng thái của radio */
+    #radio:checked ~ .category-content-wrapper {
+        display: none;
+    }
+
+    /* Tiêu đề và biểu tượng sổ xuống */
+    .category-title {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    /* Biểu tượng sổ xuống */
+    label[for="toggleCheckbox"]::after {
+        content: "▼";
+        margin-left: 8px;
+        font-size: 14px;
+        user-select: none;
+    }
+
+    /* Biểu tượng khi ẩn nội dung */
+    #toggleCheckbox:checked + label::after {
+        content: "▲";
+    }
+    /* Biểu tượng sổ xuống */
+    label[for="radio"]::after {
+        content: "▼";
+        margin-left: 8px;
+        font-size: 14px;
+        user-select: none;
+    }
+
+    /* Biểu tượng khi ẩn nội dung */
+    #radio:checked + label::after {
+        content: "▲";
+    }
+
+  .category-content-wrapper {
+    padding-left: 20px;
+  }
+  .category-content{
+    padding: 5px;
+  }
+  .category-content input{
+    margin-right: 10px;
+  }
+  
+.category-content-main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.category-content-left {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    padding-right: 200px;
+}
+.category-image{
+    width: 310px;
+    height: 155px;
+}
+.category-image img{
+    width: 100%;
+}
+.category-nd{
+    padding-left: 20px;
+}
+.category-nd .title-product{
+    padding-bottom: 20px;
+}
+
+.category-content-right {
+
+}
+.category-form-space{
+    padding-bottom: 20px;
+}
+
+/* Gio Hang */
+.cart-flex-base-line{
+    display: flex;
+    align-items: baseline;
+}
+.cart-flex-left{
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.cart-trash a{
+    font-size: 18px;
+    color: blue;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.cart-pading{
+    padding-right: 40px;
+}
+.progress-container {
+    background-color: #f8d7da;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.step-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: relative;
+}
+
+.step {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    z-index: 1;
+    text-align: center;
+}
+
+.step .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.step.active .circle {
+    border-color: red;
+}
+
+/* Đường nối thể hiện tiến trình */
+.progress-line-active {
+    position: absolute;
+    top: 40%;
+    left: 18%;
+    height: 3px;
+    background-color: red;
+    z-index: 0;
+    transform: translateY(-50%);
+    width: 0;
+    transition: width 0.3s ease;
+}
+/* Thanh toán */
+/* Các phần nội dung của từng bước */
+.step-content {
+    display: none;
+    background-color: #f0f0f0;
+}
+
+.step-content.active {
+    display: block;
+}
+.bgr-step{
+    background: #ffffff;
+}
+.pay-padding-right{
+    padding-right: 20px;
+}
+form{
+    width: 740px;
+}
+.mb-3 input{
+    padding: 20px 0;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid #318DD1;
+}
+.step-container{
+    text-align: center; 
+}
+.order-success {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+.step-timer {
+    font-size: 20px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.confirm-btn {
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 18px;
+    width: 100%;
+}
+.step-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+th,td{
+    border: 1px solid;
+}
