@@ -1,4 +1,5 @@
 <div class="col xl-12">
+    <!-- Đây là giỏ hàng -->
     <div class="detail-bgr">
         <div class="detail-main">
             <div class="title">Giỏ hàng</div>
