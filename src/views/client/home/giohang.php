@@ -16,6 +16,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Phong mới thêm đoạn này nữa-->
                         <div class="category-content-main">
                             <div class="star-big">
                                 <img class="icon" src="assets\image\icon_trash.svg" alt="">
